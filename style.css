@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Secular+One&display=swap');
+
+/* Paramètre pour les balises général */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Assistant", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    font-family: "Secular One", sans-serif;
+}
+
+section {
+    min-height: 100vh;
+}
+
+textarea {
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid lightgray 1px;
+}
+
+/* Paramètrage du Header et de la barre de navigation */
+
+header {
+    background-color: #124660;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #f8f8f8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+
+/* Paramètrage de la section Top */
+
+
+#top {
+    background-image: url("images/bg.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8;
+    object-fit: cover;
+    text-align: center;
+}
+
+.title-top h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.title-top h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 0;
+
+}
+
+/* Pramaètrage de la section présentation */
+
+#presentation {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    gap: 10%;
+}
+
+#presentation img {
+    width: 50%;
+    height: auto;
+}
+
+#presentation h2 {
+    color: #1b9476;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+#presentation h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.container-pre {
+    margin-bottom: 3.5%;
+}
+
+.container-pre-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.container-lien {
+    text-align: center;
+}
+
+/* Paramètrage de la section Nos services */
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-cards {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.grid-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card h2 {
+    color: #1b9476;
+}
+
+.card img {
+    border: solid grey 1px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/* Paramètrage de la section réalisation */
+
+#realisation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.rls-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 3.5%;
+}
+
+.rls-container img {
+    border: solid lightgrey 1px;
+    padding: 0.2%;
+    border-radius: 5px;
+}
+
+/* Paramétrage de la section Nous localiser */
+
+#loc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    width: 95%;
+}
+
+/* Paramètrage de la section Contact */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 2%;
+}
+
+.contact-form input {
+    padding: 1%;
+    border-radius: 5px;
+    border: solid lightgray 1px;
+}
+
+.form-submit input{
+    border: none;
+}
+
+
+/* Pramètrage du Footer */
+
+footer {
+    background-color: #124660;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f8f8f8;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 0.5%;
+}
+
+/* Création de class personnalisées */
+
+.bouton {
+    background-color: #1b9476;
+    border-radius: 5px;
+    padding: 0.6%;
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: background-color 0.25s ease;
+    font-weight: bold;
+    margin-top: 2.5%;
+}
+
+.bouton:hover {
+    background-color: #124660;
+}
+
+.img-size {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.margin-h2 {
+    margin-bottom: 0;
+    color: #1b9476;
+    font-weight: 700;
+    font-size: 2rem;
+}
